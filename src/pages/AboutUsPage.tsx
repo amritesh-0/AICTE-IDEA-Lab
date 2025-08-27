@@ -121,8 +121,8 @@ const AboutUsPage: React.FC = () => {
   ];
 
   const studentTeam = [
-    { name: "Prisha Anand", role: "AICTE Lab Website" },
-    { name: "Vemula Ananya", role: "AICTE Lab Website" }
+    { name: "Amritesh Kumar", role: "AICTE Lab Website" },
+    { name: "Mannya Aggarwal", role: "AICTE Lab Website" }
   ];
 
   useEffect(() => {

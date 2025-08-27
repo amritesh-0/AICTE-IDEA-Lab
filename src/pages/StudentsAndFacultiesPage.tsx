@@ -57,15 +57,15 @@ const StudentsAndFacultiesPage: React.FC = () => {
   const students = [
     {
       id: 1,
-      name: "Prisha Anand",
-      year: "Final Year B.Tech CSE",
+      name: "Amritesh Kumar",
+      year: "Third Year B.Tech CSE",
       project: "AICTE Lab Website Development",
-      achievements: "Web Development Excellence Award",
+      achievements: <>Founder, <a href="https://www.localyse.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Localyse.in</a></>,
       image: IMAGES.STUDENT_1
     },
     {
       id: 2,
-      name: "Vemula Ananya",
+      name: "Mannya Agarwal",
       year: "Third Year B.Tech ECE",
       project: "AICTE Lab Website Development",
       achievements: "UI/UX Design Excellence",

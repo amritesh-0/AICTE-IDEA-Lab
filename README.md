@@ -2,7 +2,7 @@
 
 A modern web application showcasing the AICTE IDEA Lab at Manipal University Jaipur. Built with React, TypeScript, and modern web technologies.
 
-## 🚀 Features
+##  Features
 
 - **Modern UI/UX**: Sleek design with smooth animations and transitions
 - **Responsive Design**: Mobile-first approach ensuring compatibility across all devices
@@ -10,7 +10,7 @@ A modern web application showcasing the AICTE IDEA Lab at Manipal University Jai
 - **Professional Layouts**: Organized presentation of facilities, faculty, and student information
 - **Optimized Performance**: Fast loading times with optimized assets
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend Framework**: React 18 with TypeScript
 - **Styling**: Tailwind CSS for modern, utility-first styling
@@ -19,7 +19,7 @@ A modern web application showcasing the AICTE IDEA Lab at Manipal University Jai
 - **Routing**: React Router DOM for seamless navigation
 - **Build Tool**: Vite for fast development and building
 
-## 📱 Key Features by Section
+##  Key Features by Section
 
 ### Home/About Us
 - Dynamic hero section with mission statement
@@ -39,7 +39,7 @@ A modern web application showcasing the AICTE IDEA Lab at Manipal University Jai
 - Infrastructure highlights
 - Interactive image gallery
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -94,17 +94,8 @@ project/
 - **Components**: Consistent card layouts and spacing
 - **Animations**: Smooth transitions and hover effects
 
-## 🔧 Configuration
 
-### Environment Variables
-Create a \`.env\` file in the root directory:
-
-\`\`\`env
-VITE_APP_TITLE=AICTE IDEA Lab
-VITE_PUBLIC_URL=http://localhost:3000
-\`\`\`
-
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create your feature branch (\`git checkout -b feature/AmazingFeature\`)
@@ -112,7 +103,7 @@ VITE_PUBLIC_URL=http://localhost:3000
 4. Push to the branch (\`git push origin feature/AmazingFeature\`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -126,10 +117,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any queries regarding the IDEA Lab, please contact:
 
-- **Email**: [ideamanipaljaipur@example.com]
-- **Phone**: [Contact Number]
+- **Email**: [idealab@jaipur.manipal.edu]
+- **Phone**: [+91-141-999-4000]
 - **Location**: Manipal University Jaipur
 
 ---
 
-Built with ❤️ by the AICTE IDEA Lab team at Manipal University Jaipur
+Built with ❤️ by the Amritesh Kumar and AICTE IDEA Lab team at Manipal University Jaipur
