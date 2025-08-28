@@ -156,7 +156,7 @@ const AboutUsPage: React.FC = () => {
                 className="h-full bg-cover bg-center relative"
                 style={{ backgroundImage: `url(${item.image})` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-teal-900/80" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/80" />
                 <div className="absolute inset-0 flex items-center justify-center text-center text-white">
                   <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -164,7 +164,7 @@ const AboutUsPage: React.FC = () => {
                     transition={{ delay: 0.5 }}
                     className="max-w-4xl px-4"
                   >
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">{item.title}</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black">{item.title}</h1>
                     <p className="text-lg md:text-xl text-gray-200">{item.description}</p>
                   </motion.div>
                 </div>
@@ -222,6 +222,27 @@ const AboutUsPage: React.FC = () => {
           </p>
         </motion.section>
 
+
+        {/* Advisory Leadership */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
+        >
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-8">Advisory Leadership</h3>
+          <div className="max-w-2xl mx-auto space-y-6 text-center text-gray-700">
+            <div>
+              <h4 className="text-xl font-semibold">Dean of Engineering</h4>
+              <p>Dr. Arun Shanbhag</p>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold">President of MUJ</h4>
+              <p>N N Sharma</p>
+            </div>
+          </div>
+        </motion.section>
+
         {/* Key Highlights */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}
@@ -238,7 +259,7 @@ const AboutUsPage: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="bg-gradient-to-r from-blue-600 to-teal-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-gradient-to-r from-primary to-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">{title}</h4>
@@ -439,11 +460,11 @@ const AboutUsPage: React.FC = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-white p-6 rounded-xl shadow-lg text-center"
                 >
-                  <div className="bg-gradient-to-r from-blue-600 to-teal-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-gradient-to-r from-primary to-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-8 w-8 text-white" />
                   </div>
                   <h5 className="font-bold text-gray-900 mb-2">{leader.name}</h5>
-                  <p className="text-blue-600 text-sm">{leader.role}</p>
+                  <p className="text-primary text-sm">{leader.role}</p>
                 </motion.div>
               ))}
             </div>
@@ -465,7 +486,7 @@ const AboutUsPage: React.FC = () => {
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="flex items-center space-x-3 p-3 bg-white rounded-lg shadow-sm"
                   >
-                    <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
                       <span className="text-white text-xs font-bold">{member.split(' ')[1]?.[0] || member[0]}</span>
                     </div>
                     <span className="text-gray-700 font-medium">{member}</span>
@@ -488,7 +509,7 @@ const AboutUsPage: React.FC = () => {
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">{student.name.split(' ')[0][0]}{student.name.split(' ')[1]?.[0]}</span>
                     </div>
                     <div>
@@ -507,11 +528,11 @@ const AboutUsPage: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-2xl p-12"
+          className="text-center bg-gradient-to-r from-primary to-accent text-white rounded-2xl p-12"
         >
           <div className="flex items-center justify-center mb-6">
             <Globe className="h-8 w-8 mr-3" />
-            <h3 className="text-3xl font-bold">Vision for the Future</h3>
+            <h3 className="text-3xl font-bold text-black">Vision for the Future</h3>
           </div>
           <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
             We focus on sustainable technologies that address rural challenges while aligning with UN Sustainable 
@@ -521,17 +542,17 @@ const AboutUsPage: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
               <Heart className="h-8 w-8 text-pink-300 mb-3" />
-              <h4 className="font-bold mb-2">Social Impact</h4>
+              <h4 className="font-bold mb-2 text-black">Social Impact</h4>
               <p className="text-blue-100 text-sm">Addressing rural community needs through innovative solutions</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
               <Zap className="h-8 w-8 text-yellow-300 mb-3" />
-              <h4 className="font-bold mb-2">Sustainability</h4>
+              <h4 className="font-bold mb-2 text-black">Sustainability</h4>
               <p className="text-blue-100 text-sm">Eco-friendly technologies and sustainable practices</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
               <Globe className="h-8 w-8 text-green-300 mb-3" />
-              <h4 className="font-bold mb-2">Global Goals</h4>
+              <h4 className="font-bold mb-2 text-black">Global Goals</h4>
               <p className="text-blue-100 text-sm">Aligned with UN Sustainable Development Goals</p>
             </div>
           </div>

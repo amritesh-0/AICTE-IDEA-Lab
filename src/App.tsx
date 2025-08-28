@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50">
+      <div className="flex flex-col min-h-screen bg-secondary">
         <div className="fixed inset-x-0 top-0 z-50">
           <AnimatePresence>
             {alertVisible && (
@@ -31,7 +31,7 @@ function App() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-3 px-4 text-center relative"
+                className="bg-gradient-to-r from-primary to-accent text-white py-3 px-4 text-center relative"
               >
                 <p className="text-sm font-medium">
                   🚀 New STEM Innovation Workshop Series Starting Soon! Register Now

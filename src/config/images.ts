@@ -31,10 +31,3 @@ export const IMAGES = {
   FACILITY_2: '/images/TrialPic2.jpeg',
   FACILITY_3: '/images/TrialPic3.jpg',
 };
-
-// External image fallbacks (for development)
-export const EXTERNAL_IMAGES = {
-  LEADERSHIP_PLACEHOLDER: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1',
-  STUDENT_PLACEHOLDER: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1',
-  FACILITY_PLACEHOLDER: 'https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-};

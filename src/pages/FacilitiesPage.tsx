@@ -162,7 +162,7 @@ const FacilitiesPage: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-20 rounded-b-3xl">
+      <section className="bg-gradient-to-r from-primary to-accent text-white py-20 rounded-b-3xl">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -184,7 +184,7 @@ const FacilitiesPage: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
+          className="bg-gradient-to-br from-gray-50 to-secondary rounded-2xl p-8 lg:p-12"
         >
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Infrastructure Highlights</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -196,7 +196,7 @@ const FacilitiesPage: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="bg-gradient-to-r from-blue-600 to-teal-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-gradient-to-r from-primary to-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{label}</h3>
@@ -224,7 +224,7 @@ const FacilitiesPage: React.FC = () => {
               >
                 <div className="p-8">
                   <div className="flex items-start space-x-4 mb-6">
-                    <div className="bg-gradient-to-r from-blue-600 to-teal-600 p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <div className="bg-gradient-to-r from-primary to-accent p-3 rounded-lg group-hover:scale-110 transition-transform">
                       <facility.icon className="h-6 w-6 text-white" />
                     </div>
                     <div className="flex-1">
@@ -330,7 +330,7 @@ const FacilitiesPage: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-2xl p-12"
+          className="text-center bg-gradient-to-r from-primary to-accent text-white rounded-2xl p-12"
         >
           <div className="flex items-center justify-center mb-4">
             <MapPin className="h-8 w-8 mr-3" />
@@ -340,10 +340,10 @@ const FacilitiesPage: React.FC = () => {
             Ready to experience innovation firsthand? Schedule a tour or book equipment access to start your next project.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Schedule a Tour
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
               Book Equipment
             </button>
           </div>

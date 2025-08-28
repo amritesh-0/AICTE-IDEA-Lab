@@ -78,30 +78,6 @@ const StudentsAndFacultiesPage: React.FC = () => {
       project: "Sustainable Water Purification System",
       achievements: "State Level Science Exhibition - Gold Medal",
       image: IMAGES.STUDENT_3
-    },
-    {
-      id: 4,
-      name: "Sneha Gupta",
-      year: "Final Year B.Tech Biotech",
-      project: "Biodegradable Plastic Alternatives",
-      achievements: "Startup Incubation Grant Recipient",
-      image: IMAGES.STUDENT_1
-    },
-    {
-      id: 5,
-      name: "Karthik Nair",
-      year: "Third Year B.Tech IT",
-      project: "Blockchain-based Supply Chain",
-      achievements: "Hackathon Winner - TechFest 2024",
-      image: IMAGES.STUDENT_2
-    },
-    {
-      id: 6,
-      name: "Divya Singh",
-      year: "Second Year B.Tech Civil",
-      project: "Smart Building Management System",
-      achievements: "Research Publication in Sustainability Journal",
-      image: IMAGES.STUDENT_3
     }
   ];
 
@@ -143,14 +119,14 @@ const StudentsAndFacultiesPage: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-20 rounded-b-3xl">
+      <section className="bg-gradient-to-r from-primary to-accent text-white py-20 rounded-b-3xl">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Academic Community</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black">Our Academic Community</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
               Meet the brilliant minds driving innovation at IDEA Lab - from world-class faculty 
               to exceptional students creating tomorrow's solutions today.
@@ -178,7 +154,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
                 onClick={() => setSelectedCategory(key as any)}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all ${
                   selectedCategory === key
-                    ? 'bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-primary to-accent text-white shadow-lg'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -195,6 +171,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="mb-16"
           >
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Faculty</h2>
             <div className="grid lg:grid-cols-2 gap-8">
@@ -215,7 +192,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
                       />
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                        <p className="text-blue-600 font-medium mb-2">{member.designation}</p>
+                        <p className="text-primary font-medium mb-2">{member.designation}</p>
                         <p className="text-gray-600 text-sm mb-4">{member.specialization}</p>
                         <div className="flex space-x-4 text-sm text-gray-500">
                           <div className="flex items-center space-x-1">
@@ -232,7 +209,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
                     
                     <button
                       onClick={() => toggleFacultyExpansion(member.id)}
-                      className="mt-6 flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors"
+                      className="mt-6 flex items-center space-x-2 text-primary hover:text-accent transition-colors"
                     >
                       <span>View Details</span>
                       <ChevronDown
@@ -268,7 +245,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
                               {member.projects.map((project, idx) => (
                                 <span
                                   key={idx}
-                                  className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+                                  className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
                                 >
                                   {project}
                                 </span>
@@ -284,6 +261,26 @@ const StudentsAndFacultiesPage: React.FC = () => {
             </div>
           </motion.section>
         )}
+
+        {/* ✅ Fixed: Only one Advisory Leadership section */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
+        >
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Advisory Leadership</h2>
+          <div className="max-w-2xl mx-auto space-y-6 text-center text-gray-700">
+            <div>
+              <h3 className="text-xl font-semibold">Dean of Engineering</h3>
+              <p>Dr. Arun Shanbhag</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">President of MUJ</h3>
+              <p>N N Sharma</p>
+            </div>
+          </div>
+        </motion.section>
 
         {/* Students Section */}
         {filteredStudents.length > 0 && (
@@ -345,7 +342,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="bg-gradient-to-r from-blue-600 to-teal-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-gradient-to-r from-primary to-accent w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{program.title}</h3>
@@ -364,18 +361,18 @@ const StudentsAndFacultiesPage: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-2xl p-12"
+          className="text-center bg-gradient-to-r from-primary to-accent text-white rounded-2xl p-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Join Our Innovation Community</h2>
+          <h2 className="text-3xl font-bold mb-4 text-black">Join Our Innovation Community</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Be part of a vibrant ecosystem where ideas flourish and innovations come to life. 
             Connect with mentors, collaborate on projects, and shape the future of technology.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Apply for Mentorship
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
               View Open Projects
             </button>
           </div>

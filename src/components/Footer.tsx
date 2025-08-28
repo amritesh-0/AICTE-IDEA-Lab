@@ -16,6 +16,7 @@ import {
   Building,
   Beaker
 } from 'lucide-react';
+import { IMAGES } from '../config/images';
 
 const Footer: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,18 +70,28 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-gray-900 text-white">
+      <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Logo & Description */}
             <div className="lg:col-span-2">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-gradient-to-r from-blue-600 to-teal-600 p-2 rounded-lg">
-                  <Beaker className="h-6 w-6 text-white" />
+            <div className="flex items-center space-x-3 mb-6">
+                <div className="flex items-center space-x-2">
+                  <img 
+                    src={IMAGES.AICTE_LOGO} 
+                    alt="AICTE Logo" 
+                    className="h-10 w-8 object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">AICTE IDEA Lab</h3>
-                  <p className="text-gray-400">Manipal University Jaipur</p>
+                <div className="flex items-center space-x-2">
+                  <img 
+                    src={IMAGES.MUJ_LOGO} 
+                    alt="MUJ Logo" 
+                    className="h-8 w-100 object-contain"
+                  />
+                </div>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed mb-6">
@@ -93,7 +104,7 @@ const Footer: React.FC = () => {
               <div className="flex space-x-4">
                 <button
                   onClick={() => openModal('contact')}
-                  className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 px-6 py-3 rounded-lg font-semibold transition-all flex items-center space-x-2"
+                  className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 px-6 py-3 rounded-lg font-semibold transition-all flex items-center space-x-2"
                 >
                   <Mail size={18} />
                   <span>Contact Us</span>

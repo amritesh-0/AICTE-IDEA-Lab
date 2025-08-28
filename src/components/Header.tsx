@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, Beaker, Home, Users, Building } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { IMAGES } from '../config/images';
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -36,12 +37,22 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="bg-gradient-to-r from-blue-600 to-teal-600 p-2 rounded-lg group-hover:shadow-lg transition-shadow">
-              <Beaker className="h-6 w-6 text-white" />
+            <div className="flex items-center space-x-2">
+              <img 
+                src={IMAGES.AICTE_LOGO} 
+                alt="AICTE Logo" 
+                className="h-10 w-10 object-contain"
+              />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">IDEA Lab</h1>
-              <p className="text-sm text-gray-600">Manipal University Jaipur</p>
+              <h1 className="text-xl font-bold text-gray-900">AICTE IDEA Lab</h1>
+              <div className="flex items-center space-x-2">
+                <img 
+                  src={IMAGES.MUJ_LOGO} 
+                  alt="MUJ Logo" 
+                  className="h-8 w-100 object-contain"
+                />
+              </div>
             </div>
           </Link>
 
@@ -53,8 +64,8 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
                 to={path}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
                   location.pathname === path
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'
+                    ? 'bg-primary/10 text-primary'
+                    : 'text-gray-700 hover:bg-gray-100 hover:text-primary'
                 }`}
               >
                 <Icon size={18} />
