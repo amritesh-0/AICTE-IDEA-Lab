@@ -2,14 +2,6 @@
 
 A modern web application showcasing the AICTE IDEA Lab at Manipal University Jaipur. Built with React, TypeScript, and modern web technologies.
 
-## Features
-
-- **Modern UI/UX**: Sleek design with smooth animations and transitions.
-- **Responsive Design**: Mobile-first approach ensuring compatibility across all devices.
-- **Interactive Components**: Dynamic navigation, carousels, and modals.
-- **Professional Layouts**: Organized presentation of facilities, faculty, and student information.
-- **Optimized Performance**: Fast loading times with optimized assets.
-
 ## Tech Stack
 
 - **Frontend Framework**: React 18 with TypeScript.
@@ -74,7 +66,7 @@ A modern web application showcasing the AICTE IDEA Lab at Manipal University Jai
    yarn build
    ```
 
-## 🎯 Project Structure
+##  Project Structure
 
 ```
 project/
@@ -87,7 +79,7 @@ project/
 └── package.json         # Project dependencies
 ```
 
-## 🎨 Design System
+##  Design System
 
 - **Colors**: Professional blue/teal gradient scheme.
 - **Typography**: Clean, modern font hierarchy.
