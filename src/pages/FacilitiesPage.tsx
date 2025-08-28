@@ -169,7 +169,7 @@ const FacilitiesPage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">World-Class Facilities</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black">World-Class Facilities</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
               Experience innovation with our cutting-edge infrastructure, advanced equipment, 
               and collaborative spaces designed to bring your ideas to life.
