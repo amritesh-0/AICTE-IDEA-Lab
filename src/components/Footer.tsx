@@ -151,18 +151,18 @@ const Footer: React.FC = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex items-center space-x-3">
+                {/* <li className="flex items-center space-x-3">
                   <Phone size={18} className="text-blue-400" />
                   <a href="tel:+911419994000" className="text-gray-400 hover:text-white transition-colors">
                     +91-141-999-4000
                   </a>
-                </li>
-                <li className="flex items-center space-x-3">
+                </li> */}
+                {/* <li className="flex items-center space-x-3">
                   <Mail size={18} className="text-blue-400" />
                   <a href="mailto:idealab@jaipur.manipal.edu" className="text-gray-400 hover:text-white transition-colors">
                     idealab@jaipur.manipal.edu
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

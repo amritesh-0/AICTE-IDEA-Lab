@@ -11,10 +11,10 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 1,
       name: "Dr. Ashima Bagaria",
-      designation: "Faculty Coordinator (Electronics)",
-      specialization: "Electronics & Communication Engineering",
+      designation: "Assiciate Dean",
+      specialization: "School of Physical and Biological Sciences",
       email: "ashima.bagaria@jaipur.manipal.edu",
-      phone: "+91-141-999-4001",
+      // phone: "+91-141-999-4001",
       image: IMAGES.ASHIMA_BAGARIA,
       achievements: ["Published 20+ research papers", "Expert in IoT and Embedded Systems", "Industry Collaboration Lead"],
       projects: ["Smart Campus IoT Solutions", "Embedded Systems Development", "Wireless Communication"]
@@ -22,10 +22,10 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 2,
       name: "Dr. Preeti Narooka",
-      designation: "Faculty Co-Coordinator (AIML)",
+      designation: "Assistant Professor (selection grade)",
       specialization: "Artificial Intelligence & Machine Learning",
       email: "preeti.narooka@jaipur.manipal.edu",
-      phone: "+91-141-999-4002",
+      // phone: "+91-141-999-4002",
       image: IMAGES.PREETI_NAROOKA,
       achievements: ["AI Research Publications", "Machine Learning Expert", "Data Science Mentor"],
       projects: ["AI-Driven Healthcare", "Predictive Analytics", "Computer Vision Applications"]
@@ -33,10 +33,10 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 3,
       name: "Dr. Manoj K. Saini",
-      designation: "Faculty Member",
-      specialization: "Computer Science & Engineering",
+      designation: "Assistant Professor (selection grade)",
+      specialization: "Department of Physics",
       email: "manoj.saini@jaipur.manipal.edu",
-      phone: "+91-141-999-4003",
+      // phone: "+91-141-999-4003",
       image: IMAGES.MANOJ_SAINI,
       achievements: ["Software Engineering Expert", "15+ Years Teaching Experience", "Industry Consultant"],
       projects: ["Software Development", "Database Systems", "Web Technologies"]
@@ -44,10 +44,10 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 4,
       name: "Dr. Saurabh Dewangan",
-      designation: "Faculty Member",
-      specialization: "Mechanical Engineering",
+      designation: "Assistant Professor",
+      specialization: " Department of Mechanical Engineering",
       email: "saurabh.dewangan@jaipur.manipal.edu",
-      phone: "+91-141-999-4004",
+      // phone: "+91-141-999-4004",
       image: IMAGES.SAURABH_DEWANGAN,
       achievements: ["Mechanical Design Expert", "CAD/CAM Specialist", "Product Development"],
       projects: ["3D Modeling", "Prototype Development", "Manufacturing Processes"]
@@ -73,10 +73,10 @@ const StudentsAndFacultiesPage: React.FC = () => {
     },
     {
       id: 3,
-      name: "Rohit Sharma",
-      year: "Second Year B.Tech Mechanical",
-      project: "Sustainable Water Purification System",
-      achievements: "State Level Science Exhibition - Gold Medal",
+      name: "Ananya Khandelwal",
+      year: "Third Year B.Tech CSE",
+      project: "AICTE Lab Website Development",
+      achievements: "Front-End Development Lead",
       image: IMAGES.STUDENT_3
     }
   ];
@@ -200,8 +200,8 @@ const StudentsAndFacultiesPage: React.FC = () => {
                             <span>{member.email}</span>
                           </div>
                           <div className="flex items-center space-x-1">
-                            <Phone size={14} />
-                            <span>{member.phone}</span>
+                            {/* <Phone size={14} />
+                            <span>{member.phone}</span> */}
                           </div>
                         </div>
                       </div>
@@ -262,26 +262,88 @@ const StudentsAndFacultiesPage: React.FC = () => {
           </motion.section>
         )}
 
-        {/* ✅ Fixed: Only one Advisory Leadership section */}
+        {/* Advisory Leadership */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
         >
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Advisory Leadership</h2>
-          <div className="max-w-2xl mx-auto space-y-6 text-center text-gray-700">
-            <div>
-              <h3 className="text-xl font-semibold">Dean of Engineering</h3>
-              <p>Dr. Arun Shanbhag</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">President of MUJ</h3>
-              <p>N N Sharma</p>
-            </div>
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Advisory Leadership</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* President */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.PRESIDENT}
+                  alt="President of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">President of MUJ</h4>
+              <p className="text-primary font-medium">Dr. N N Sharma</p>
+            </motion.div>
+
+            {/* Pro President */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.PRO_PRESIDENT}
+                  alt="Pro President of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Pro President of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Karunakar A Kotegar</p>
+            </motion.div>
+
+            {/* Provost */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.PROVOST}
+                  alt="Provost of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Provost of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Nitu Bhatnagar</p>
+            </motion.div>
+
+            {/* Dean FoSTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.FOSTA}
+                  alt="Dean FoSTA of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Dean FoSTA of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Kuldip Singh Sangwan</p>
+            </motion.div>
           </div>
         </motion.section>
-
         {/* Students Section */}
         {filteredStudents.length > 0 && (
           <motion.section

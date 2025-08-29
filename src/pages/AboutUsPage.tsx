@@ -45,8 +45,8 @@ const AboutUsPage: React.FC = () => {
 
   const highlights = [
     { icon: Building, title: "3000+ sq. ft.", description: "State-of-the-art innovation facility" },
-    { icon: Award, title: "₹55 Lakh", description: "AICTE NIDHI initiative funding" },
-    { icon: Users, title: "15+ Partners", description: "Active industry collaborations" },
+    { icon: Award, title: "₹90 Lakh", description: "AICTE Idea Lab" },
+    { icon: Users, title: "Partners", description: "Active industry collaborations" },
     { icon: Rocket, title: "24x7 Access", description: "Security-controlled lab operations" },
   ];
 
@@ -68,11 +68,11 @@ const AboutUsPage: React.FC = () => {
   ];
 
   const keyHighlights = [
-    "Established under AICTE's NIDHI initiative with ₹55 lakh funding",
+    "Established under AICTE Idea Lab with ₹90 lakh funding",
     "3000+ sq. ft. facility equipped with 50+ advanced tools including 3D printers, laser cutters, and CNC machines",
-    "Active industry partnerships with 15+ companies for live projects",
+    "Active industry partnerships with companies for live projects",
     "24x7 operational lab with security-controlled access",
-    "Part of national IDEA Labs Network (IDEALNET)",
+    "Part of national AICTE IDEA Labs",
     "Recipient of National Innovation Award 2024"
   ];
 
@@ -230,16 +230,79 @@ const AboutUsPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
         >
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-8">Advisory Leadership</h3>
-          <div className="max-w-2xl mx-auto space-y-6 text-center text-gray-700">
-            <div>
-              <h4 className="text-xl font-semibold">Dean of Engineering</h4>
-              <p>Dr. Arun Shanbhag</p>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold">President of MUJ</h4>
-              <p>N N Sharma</p>
-            </div>
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Advisory Leadership</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* President */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.PRESIDENT}
+                  alt="President of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">President of MUJ</h4>
+              <p className="text-primary font-medium">Dr. N N Sharma</p>
+            </motion.div>
+
+            {/* Pro President */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.PRO_PRESIDENT}
+                  alt="Pro President of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Pro President of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Karunakar A Kotegar</p>
+            </motion.div>
+
+            {/* Provost */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.PROVOST}
+                  alt="Provost of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Provost of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Nitu Bhatnagar</p>
+            </motion.div>
+
+            {/* Dean FoSTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.FOSTA}
+                  alt="Dean FoSTA of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Dean FoSTA of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Kuldip Singh Sangwan</p>
+            </motion.div>
           </div>
         </motion.section>
 

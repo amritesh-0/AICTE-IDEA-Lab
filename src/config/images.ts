@@ -30,4 +30,10 @@ export const IMAGES = {
   FACILITY_1: '/images/TrialPic1.jpeg',
   FACILITY_2: '/images/TrialPic2.jpeg',
   FACILITY_3: '/images/TrialPic3.jpg',
+  
+  // Advisory Leadership images
+  PRESIDENT: '/images/President.png',
+  PRO_PRESIDENT: '/images/Pro President.jpg',
+  FOSTA: '/images/fosta.jpg',
+  PROVOST: '/images/Provost.jpg',
 };
