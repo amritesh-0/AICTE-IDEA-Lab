@@ -11,7 +11,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 1,
       name: "Dr. Ashima Bagaria",
-      designation: "Assiciate Dean",
+      designation: "Associate Dean",
       specialization: "School of Physical and Biological Sciences",
       email: "ashima.bagaria@jaipur.manipal.edu",
       // phone: "+91-141-999-4001",
@@ -22,7 +22,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 2,
       name: "Dr. Preeti Narooka",
-      designation: "Assistant Professor (selection grade)",
+      designation: "Assistant Professor (Selection grade)",
       specialization: "Artificial Intelligence & Machine Learning",
       email: "preeti.narooka@jaipur.manipal.edu",
       // phone: "+91-141-999-4002",
@@ -33,7 +33,7 @@ const StudentsAndFacultiesPage: React.FC = () => {
     {
       id: 3,
       name: "Dr. Manoj K. Saini",
-      designation: "Assistant Professor (selection grade)",
+      designation: "Assistant Professor (Selection grade)",
       specialization: "Department of Physics",
       email: "manoj.saini@jaipur.manipal.edu",
       // phone: "+91-141-999-4003",

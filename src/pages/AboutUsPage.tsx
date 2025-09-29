@@ -104,8 +104,8 @@ const AboutUsPage: React.FC = () => {
 
   const leadership = [
     { name: "Prof. (Dr.) Amit Soni", role: "Chief Mentor" },
-    { name: "Prof. (Dr.) Ashima Bagaria", role: "Faculty Coordinator (Electronics)" },
-    { name: "Dr. Preeti Narooka", role: "Faculty Co-Coordinator (AIML)" }
+    { name: "Prof. (Dr.) Ashima Bagaria", role: "Associate Dean (School of Physical and Biological Sciences)" },
+    { name: "Dr. Preeti Narooka", role: "Faculty Co-cordinator (AIML)" }
   ];
 
   const teamMembers = [
