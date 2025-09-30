@@ -70,7 +70,7 @@ function App() {
             <Route path="/" element={<AboutUsPage />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/students" element={<StudentsPage />} />
-            <Route path="/faculties" element={<FacultiesPage />} />
+            <Route path="/members" element={<FacultiesPage />} />
             <Route path="/facilities" element={<FacilitiesPage />} />
           </Routes>
         </main>
