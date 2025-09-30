@@ -79,7 +79,7 @@ const AboutUsPage: React.FC = () => {
   const visionPoints = [
     "Cross-disciplinary project teams",
     "Industry mentorship programs",
-    "Access to ₹1.1 crore worth of prototyping equipment",
+    "Industry Partner: UNEXT Company",
     "Incubation support for startups",
     "Integration with Atal Tinkering Labs"
   ];
@@ -104,8 +104,8 @@ const AboutUsPage: React.FC = () => {
 
   const leadership = [
     { name: "Prof. (Dr.) Amit Soni", role: "Chief Mentor" },
-    { name: "Prof. (Dr.) Ashima Bagaria", role: "Faculty Coordinator (Electronics)" },
-    { name: "Dr. Preeti Narooka", role: "Faculty Co-Coordinator (AIML)" }
+    { name: "Prof. (Dr.) Ashima Bagaria", role: "Associate Dean (School of Physical and Biological Sciences" },
+    { name: "Dr. Preeti Narooka", role: "Faculty Co-ordinator (AIML)" }
   ];
 
   const teamMembers = [
@@ -213,13 +213,19 @@ const AboutUsPage: React.FC = () => {
             About AICTE IDEA Lab
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Manipal University Jaipur has established a state-of-the-art IDEA Lab under AICTE's prestigious 
-            IDEA (Idea Development, Evaluation & Application) Lab Scheme. This initiative transforms STEM education 
-            by providing a dedicated space for hands-on innovation, prototype development, and practical application 
-            of engineering principles. Our lab serves as a common facility where students and faculty engage in 
-            creative problem-solving while developing critical 21st-century skills like design thinking, 
+            Manipal University Jaipur has established a state-of-the-art IDEA Lab under AICTE's prestigious
+            IDEA (Idea Development, Evaluation & Application) Lab Scheme. This initiative transforms STEM education
+            by providing a dedicated space for hands-on innovation, prototype development, and practical application
+            of engineering principles. Our lab serves as a common facility where students and faculty engage in
+            creative problem-solving while developing critical 21st-century skills like design thinking,
             collaboration, and lifelong learning.
           </p>
+          <button
+            onClick={() => window.open('/IDEA Lab scheme_doc.pdf', '_blank')}
+            className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-3 rounded-lg font-semibold transition-all flex items-center space-x-2 mx-auto"
+          >
+            <span>Learn More</span>
+          </button>
         </motion.section>
 
 
@@ -231,7 +237,7 @@ const AboutUsPage: React.FC = () => {
           className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
         >
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Advisory Leadership</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {/* President */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -302,6 +308,24 @@ const AboutUsPage: React.FC = () => {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Dean FoSTA of MUJ</h4>
               <p className="text-primary font-medium">Dr. Kuldip Singh Sangwan</p>
+            </motion.div>
+
+            {/* Registrar */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.REGISTRAR}
+                  alt="Registrar of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Registrar of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Amit Soni</p>
             </motion.div>
           </div>
         </motion.section>

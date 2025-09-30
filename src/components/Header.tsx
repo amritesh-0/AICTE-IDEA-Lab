@@ -22,7 +22,8 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
 
   const navItems = [
     { path: '/about', label: 'About Us', icon: Home },
-    { path: '/students-faculties', label: 'Students & Faculties', icon: Users },
+    { path: '/faculties', label: 'Faculties', icon: Users },
+    { path: '/students', label: 'Students', icon: Users },
     { path: '/facilities', label: 'Facilities', icon: Building },
   ];
 

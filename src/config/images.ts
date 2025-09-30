@@ -36,4 +36,5 @@ export const IMAGES = {
   PRO_PRESIDENT: '/images/Pro President.jpg',
   FOSTA: '/images/fosta.jpg',
   PROVOST: '/images/Provost.jpg',
+  REGISTRAR: '/images/AmitSoniProfile.jpg',
 };

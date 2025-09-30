@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import AboutUsPage from './pages/AboutUsPage';
 import StudentsAndFacultiesPage from './pages/StudentsAndFacultiesPage';
+import StudentsPage from './pages/StudentsPage';
+import FacultiesPage from './pages/FacultiesPage';
 import FacilitiesPage from './pages/FacilitiesPage';
 import Footer from './components/Footer';
 
@@ -67,7 +69,8 @@ function App() {
           <Routes>
             <Route path="/" element={<AboutUsPage />} />
             <Route path="/about" element={<AboutUsPage />} />
-            <Route path="/students-faculties" element={<StudentsAndFacultiesPage />} />
+            <Route path="/students" element={<StudentsPage />} />
+            <Route path="/faculties" element={<FacultiesPage />} />
             <Route path="/facilities" element={<FacilitiesPage />} />
           </Routes>
         </main>
