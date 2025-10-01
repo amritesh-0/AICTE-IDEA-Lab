@@ -53,7 +53,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                   onClick={onClose}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 ${
                     location.pathname === path
-                      ? 'bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg'
+                      ? 'bg-gradient-to-r from-primary to-accent text-white shadow-lg'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -63,21 +63,21 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               ))}
             </nav>
 
-            <div className="mt-12 p-6 bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl">
+            <div className="mt-12 p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Contact</h3>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="flex items-center space-x-2">
                   <MapPin size={16} />
                   <span>Manipal University Jaipur, Dehmi-Kalan, Jaipur</span>
                 </div>
-                <div className="flex items-center space-x-2">
+                {/* <div className="flex items-center space-x-2">
                   <Phone size={16} />
                   <span>+91-141-999-4000</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail size={16} />
                   <span>idealab@jaipur.manipal.edu</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

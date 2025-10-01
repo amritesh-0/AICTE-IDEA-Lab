@@ -99,7 +99,7 @@ const AboutUsPage: React.FC = () => {
     "Research grant access for interdisciplinary projects",
     "Modern teaching resources including smart boards and VR tools",
     "Publication support for innovative research",
-    "Professional networking through IDEALNET"
+    "Professional networking through IDEA Labs"
   ];
 
   const leadership = [
@@ -291,6 +291,24 @@ const AboutUsPage: React.FC = () => {
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Provost of MUJ</h4>
               <p className="text-primary font-medium">Dr. Nitu Bhatnagar</p>
             </motion.div>
+            
+            {/* Registrar */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <img
+                  src={IMAGES.REGISTRAR}
+                  alt="Registrar of MUJ"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Registrar of MUJ</h4>
+              <p className="text-primary font-medium">Dr. Amit Soni</p>
+            </motion.div>
 
             {/* Dean FoSTA */}
             <motion.div
@@ -308,24 +326,6 @@ const AboutUsPage: React.FC = () => {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Dean FoSTA of MUJ</h4>
               <p className="text-primary font-medium">Dr. Kuldip Singh Sangwan</p>
-            </motion.div>
-
-            {/* Registrar */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-center"
-            >
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white">
-                <img
-                  src={IMAGES.REGISTRAR}
-                  alt="Registrar of MUJ"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Registrar of MUJ</h4>
-              <p className="text-primary font-medium">Dr. Amit Soni</p>
             </motion.div>
           </div>
         </motion.section>

@@ -14,8 +14,8 @@ const FacultiesPage: React.FC = () => {
       specialization: "School of Physical and Biological Sciences",
       email: "ashima.bagaria@jaipur.manipal.edu",
       image: IMAGES.ASHIMA_BAGARIA,
-      achievements: ["Published 20+ research papers", "Expert in IoT and Embedded Systems", "Industry Collaboration Lead"],
-      projects: ["Smart Campus IoT Solutions", "Embedded Systems Development", "Wireless Communication"]
+      // achievements: ["Published 20+ research papers", "Expert in IoT and Embedded Systems", "Industry Collaboration Lead"],
+      // projects: ["Smart Campus IoT Solutions", "Embedded Systems Development", "Wireless Communication"]
     },
     {
       id: 2,
@@ -24,8 +24,8 @@ const FacultiesPage: React.FC = () => {
       specialization: "Artificial Intelligence & Machine Learning",
       email: "preeti.narooka@jaipur.manipal.edu",
       image: IMAGES.PREETI_NAROOKA,
-      achievements: ["AI Research Publications", "Machine Learning Expert", "Data Science Mentor"],
-      projects: ["AI-Driven Healthcare", "Predictive Analytics", "Computer Vision Applications"]
+      // achievements: ["AI Research Publications", "Machine Learning Expert", "Data Science Mentor"],
+      // projects: ["AI-Driven Healthcare", "Predictive Analytics", "Computer Vision Applications"]
     },
     {
       id: 3,
@@ -34,8 +34,8 @@ const FacultiesPage: React.FC = () => {
       specialization: "Department of Physics",
       email: "manoj.saini@jaipur.manipal.edu",
       image: IMAGES.MANOJ_SAINI,
-      achievements: ["Software Engineering Expert", "15+ Years Teaching Experience", "Industry Consultant"],
-      projects: ["Software Development", "Database Systems", "Web Technologies"]
+      // achievements: ["Software Engineering Expert", "15+ Years Teaching Experience", "Industry Consultant"],
+      // projects: ["Software Development", "Database Systems", "Web Technologies"]
     },
     {
       id: 4,
@@ -44,8 +44,58 @@ const FacultiesPage: React.FC = () => {
       specialization: " Department of Mechanical Engineering",
       email: "saurabh.dewangan@jaipur.manipal.edu",
       image: IMAGES.SAURABH_DEWANGAN,
-      achievements: ["Mechanical Design Expert", "CAD/CAM Specialist", "Product Development"],
-      projects: ["3D Modeling", "Prototype Development", "Manufacturing Processes"]
+      // achievements: ["Mechanical Design Expert", "CAD/CAM Specialist", "Product Development"],
+      // projects: ["3D Modeling", "Prototype Development", "Manufacturing Processes"]
+    },
+    {
+      id: 5,
+      name: "Dr. Anurag Joshi",
+      designation: "Assistant Professor (Selection Grade)",
+      specialization: "Department of Mechanical Engineering",
+      email: "anurag.joshi@jaipur.manipal.edu",
+      image: IMAGES.ANURAG_JOSHI,
+      // achievements: ["Mechanical Engineering Expert", "Robotics Specialist", "Research Publications"],
+      // projects: ["Robotic Systems", "Automation Solutions", "Mechanical Design"]
+    },
+    {
+      id: 6,
+      name: "Dr. Himanshu Chaudhary",
+      designation: "Associate Professor (Senior Scale)",
+      specialization: "Department of Electronics & Communication Engineering",
+      email: "himanshu.chaudhary@jaipur.manipal.edu",
+      image: IMAGES.HIMANSHU_CHAUDHARY,
+      // achievements: ["Electronics Research Expert", "IoT Specialist", "Industry Collaborations"],
+      // projects: ["IoT Applications", "Embedded Systems", "Communication Networks"]
+    },
+    {
+      id: 7,
+      name: "Mr. Ashish Vijay",
+      designation: "Assistant Professor (Senior Scale)",
+      specialization: "Department of Electronics & Communication Engineering",
+      email: "",
+      image: IMAGES.ASHISH_VIJAY,
+      // achievements: ["Electronics Engineering Expert", "Signal Processing Specialist", "Teaching Excellence"],
+      // projects: ["Signal Processing", "Communication Systems", "Electronic Design"]
+    },
+    {
+      id: 8,
+      name: "Dr. Vinay Gupta",
+      designation: "Associate Professor",
+      specialization: "Department of Electrical Engineering",
+      email: "vinay.gupta@jaipur.manipal.edu",
+      image: IMAGES.VINAY_GUPTA,
+      // achievements: ["Electrical Engineering Expert", "Power Systems Specialist", "Research Publications"],
+      // projects: ["Power Systems", "Control Systems", "Electrical Design"]
+    },
+    {
+      id: 9,
+      name: "Dr. Himanshu Priyadarshi",
+      designation: "Assistant Professor (Senior Scale)",
+      specialization: "Department of Electrical Engineering",
+      email: "himanshu.priyadarshi@jaipur.manipal.edu",
+      image: IMAGES.HIMANSHU_PRIYADARSHI,
+      // achievements: ["Electrical Engineering Expert", "Renewable Energy Specialist", "Industry Projects"],
+      // projects: ["Renewable Energy", "Electrical Systems", "Smart Grids"]
     }
   ];
 
@@ -66,15 +116,15 @@ const FacultiesPage: React.FC = () => {
       image: IMAGES.PROVOST
     },
     {
+        title: "Registrar of MUJ",
+        name: "Dr. Amit Soni",
+        image: IMAGES.REGISTRAR
+    },
+    {
       title: "Dean FoSTA of MUJ",
       name: "Dr. Kuldip Singh Sangwan",
       image: IMAGES.FOSTA
     },
-    {
-        title: "Registrar of MUJ",
-        name: "Dr. Amit Soni",
-        image: IMAGES.REGISTRAR
-    }
   ];
 
   const toggleFacultyExpansion = (id: number) => {
@@ -167,7 +217,8 @@ const FacultiesPage: React.FC = () => {
                     </div>
                   </div>
 
-                  <button
+                  {/* Achievements and projects can be added here in future if needed */}
+                  {/* <button
                     onClick={() => toggleFacultyExpansion(member.id)}
                     className="mt-6 flex items-center space-x-2 text-primary hover:text-accent transition-colors"
                   >
@@ -214,7 +265,8 @@ const FacultiesPage: React.FC = () => {
                         </div>
                       </div>
                     </motion.div>
-                  )}
+                  )} */}
+                  
                 </div>
               </motion.div>
             ))}
