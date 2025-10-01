@@ -30,7 +30,7 @@ const FacultiesPage: React.FC = () => {
     {
       id: 3,
       name: "Dr. Manoj K. Saini",
-      designation: "Assistant Professor (Selection grade)",
+      designation: "Associate Professor (Selection grade)",
       specialization: "Department of Physics",
       email: "manoj.saini@jaipur.manipal.edu",
       image: IMAGES.MANOJ_SAINI,
@@ -40,7 +40,7 @@ const FacultiesPage: React.FC = () => {
     {
       id: 4,
       name: "Dr. Saurabh Dewangan",
-      designation: "Assistant Professor",
+      designation: "Associate Professor",
       specialization: " Department of Mechanical Engineering",
       email: "saurabh.dewangan@jaipur.manipal.edu",
       image: IMAGES.SAURABH_DEWANGAN,

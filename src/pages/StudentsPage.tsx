@@ -8,26 +8,18 @@ const StudentsPage: React.FC = () => {
     {
       id: 1,
       name: "Amritesh Kumar",
-      year: "Third Year B.Tech CSE",
+      year: "Third Year B.Tech CSE (AI & ML)",
       project: "AICTE Lab Website Development",
-      achievements: <>Founder, <a href="https://www.localyse.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Localyse.in</a></>,
+      achievements: <>Full Stack & ML developer, <a href="https://www.localyse.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Localyse.in</a></>,
       image: IMAGES.STUDENT_1
     },
     {
       id: 2,
       name: "Mannya Agarwal",
-      year: "Third Year B.Tech CSE",
+      year: "Third Year B.Tech CSE (AI & ML)",
       project: "AICTE Lab Website Development",
       achievements: "UI/UX Design Excellence",
       image: IMAGES.STUDENT_2
-    },
-    {
-      id: 3,
-      name: "Ananya Khandelwal",
-      year: "Third Year B.Tech CSE",
-      project: "AICTE Lab Website Development",
-      achievements: "Front-End Development Lead",
-      image: IMAGES.STUDENT_3
     }
   ];
 
@@ -74,35 +66,35 @@ const StudentsPage: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="mb-16"
         >
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Student Contributors</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             {students.map((student, index) => (
               <motion.div
                 key={student.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
-                <div className="relative">
-                  <img
-                    src={student.image}
-                    alt={student.name}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-bold">{student.name}</h3>
-                    <p className="text-sm text-gray-200">{student.year}</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Current Project</h4>
-                  <p className="text-gray-600 text-sm mb-4">{student.project}</p>
-                  <div className="flex items-center space-x-2 text-sm">
-                    <Award size={14} className="text-yellow-500" />
-                    <span className="text-gray-600">{student.achievements}</span>
+                <div className="p-8">
+                  <div className="flex items-start space-x-6">
+                    <img
+                      src={student.image}
+                      alt={student.name}
+                      className="w-32 h-32 rounded-full object-cover shadow-lg"
+                    />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">{student.name}</h3>
+                      <p className="text-primary font-medium mb-2">{student.year}</p>
+                      <h4 className="font-semibold text-gray-900 mb-2">Current Project</h4>
+                      <p className="text-gray-600 text-sm mb-4">{student.project}</p>
+                      <div className="flex items-center space-x-2 text-sm">
+                        <Award size={14} className="text-yellow-500" />
+                        <span className="text-gray-600">{student.achievements}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </motion.div>

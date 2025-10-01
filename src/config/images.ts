@@ -22,9 +22,8 @@ export const IMAGES = {
   CAROUSEL_3: '/images/TrialPic3.jpg',
   
   // Placeholder images (for student profiles)
-  STUDENT_1: '/images/TrialPic1.jpeg',
-  STUDENT_2: '/images/TrialPic2.jpeg',
-  STUDENT_3: '/images/TrialPic3.jpg',
+  STUDENT_1: '/images/amritesh.jpg',
+  STUDENT_2: '/images/mannya.jpeg',
   
   // Facility images
   FACILITY_1: '/images/TrialPic1.jpeg',
