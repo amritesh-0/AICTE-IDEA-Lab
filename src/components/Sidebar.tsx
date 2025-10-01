@@ -13,7 +13,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
   const navItems = [
     { path: '/about', label: 'About Us', icon: Home },
-    { path: '/students-faculties', label: 'Students & Faculties', icon: Users },
+    { path: '/members', label: 'Members', icon: Users },
+    { path: '/students', label: 'Students', icon: Users },
     { path: '/facilities', label: 'Facilities', icon: Building },
   ];
 
