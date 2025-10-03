@@ -30,7 +30,7 @@ const FacultiesPage: React.FC = () => {
     {
       id: 3,
       name: "Dr. Manoj K. Saini",
-      designation: "Associate Professor (Selection grade)",
+      designation: "Associate Professor",
       specialization: "Department of Physics",
       email: "manoj.saini@jaipur.manipal.edu",
       image: IMAGES.MANOJ_SAINI,
