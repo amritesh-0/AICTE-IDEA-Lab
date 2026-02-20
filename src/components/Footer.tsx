@@ -78,31 +78,31 @@ const Footer: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Logo & Description */}
             <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
+              <div className="flex items-center space-x-3 mb-6">
                 <div className="flex items-center space-x-2">
-                  <img 
-                    src={IMAGES.AICTE_LOGO} 
-                    alt="AICTE Logo" 
+                  <img
+                    src={IMAGES.AICTE_LOGO}
+                    alt="AICTE Logo"
                     className="h-10 w-8 object-contain"
                   />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">AICTE IDEA Lab</h3>
-                <div className="flex items-center space-x-2">
-                  <img 
-                    src={IMAGES.MUJ_LOGO} 
-                    alt="MUJ Logo" 
-                    className="h-8 w-100 object-contain"
-                  />
-                </div>
+                  <div className="flex items-center space-x-2">
+                    <img
+                      src={IMAGES.MUJ_LOGO}
+                      alt="MUJ Logo"
+                      className="h-8 w-100 object-contain"
+                    />
+                  </div>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Fostering innovation and entrepreneurship through cutting-edge research, 
-                collaborative learning, and state-of-the-art facilities. Join us in shaping 
+                Fostering innovation and entrepreneurship through cutting-edge research,
+                collaborative learning, and state-of-the-art facilities. Join us in shaping
                 the future of STEM education and technology.
               </p>
-              
+
               {/* Action Buttons */}
               <div className="flex space-x-4">
                 <button
@@ -188,7 +188,7 @@ const Footer: React.FC = () => {
                   </motion.a>
                 ))}
               </div>
-              
+
               <div className="text-center md:text-right">
                 <p className="text-gray-400 text-sm">
                   © {new Date().getFullYear()} AICTE IDEA Lab, Manipal University Jaipur. All rights reserved.

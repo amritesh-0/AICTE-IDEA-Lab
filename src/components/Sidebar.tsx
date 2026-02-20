@@ -52,11 +52,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                   key={path}
                   to={path}
                   onClick={onClose}
-                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 ${
-                    location.pathname === path
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 ${location.pathname === path
                       ? 'bg-gradient-to-r from-primary to-accent text-white shadow-lg'
                       : 'text-gray-700 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   <Icon size={20} />
                   <span className="font-medium">{label}</span>

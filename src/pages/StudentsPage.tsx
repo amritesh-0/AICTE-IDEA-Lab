@@ -7,7 +7,7 @@ const StudentsPage: React.FC = () => {
   const students = [
     {
       id: 1,
-      name: "Amritesh Kumar",
+      name: "Mr. Amritesh Kumar",
       year: "Third Year, RG No: 23FE10CAI00318",
       project: "AICTE Lab Website Development",
       achievements: "Full Stack & ML developer",
@@ -15,7 +15,7 @@ const StudentsPage: React.FC = () => {
     },
     {
       id: 2,
-      name: "Mannya Agarwal",
+      name: "Ms. Mannya Agarwal",
       year: "Third Year, RG No: 23FE10CAI00154",
       project: "AICTE Lab Website Development",
       achievements: "UI/UX Design Excellence",
@@ -51,7 +51,7 @@ const StudentsPage: React.FC = () => {
     },
     {
       id: 7,
-      name: "Ms. Savya Govil",
+      name: "Mr. Savya Govil",
       year: "RG No: 2429010010",
       project: "Student Ambassador",
       achievements: "AICTE IDEA Lab Student Ambassador"

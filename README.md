@@ -1,117 +1,118 @@
-# AICTE IDEA Lab - Manipal University Jaipur
+# AICTE IDEA Lab Website
 
-A modern web application showcasing the AICTE IDEA Lab at Manipal University Jaipur. Built with React, TypeScript, and modern web technologies.
+It presents institutional information, members, students, facilities, event highlights, and the AICTE IDEA Lab Scheme document in a modern single-page interface.
 
-## Tech Stack
+## Overview
 
-- **Frontend Framework**: React 18 with TypeScript.
-- **Styling**: Tailwind CSS for modern, utility-first styling.
-- **Animations**: Framer Motion for smooth transitions and animations.
-- **Icons**: Lucide React for consistent iconography.
-- **Routing**: React Router DOM for seamless navigation.
-- **Build Tool**: Vite for fast development and building.
+- Framework: React 18 + TypeScript
+- Build system: Vite 5
+- Styling: Tailwind CSS
+- Motion: Framer Motion
+- Icons: Lucide React
+- Routing: React Router
 
-## Key Features by Section
+## Live Application Scope
 
-### Home/About Us
-- Dynamic hero section with mission statement.
-- Leadership profiles and team structure.
-- Vision and objectives presentation.
-- Animated section transitions.
+Current top-level routes:
 
-### Students & Faculties
-- Filterable directory of faculty and students.
-- Detailed faculty profiles.
-- Student project showcases.
-- Mentorship program information.
+- `/about` (also `/`): About AICTE IDEA Lab, leadership, highlights, event banner
+- `/members`: Faculty and members
+- `/students`: Student contributors and ambassadors
+- `/facilities`: Infrastructure and facilities
+- `/scheme`: AICTE-IDEA Lab Scheme page with document access
 
-### Facilities
-- Comprehensive facility showcase.
-- Equipment and resource listings.
-- Infrastructure highlights.
-- Interactive image gallery.
+## Repository Structure
 
-## Getting Started
+```text
+.
+├── public/
+│   ├── images/                         # Logos and static image assets
+│   ├── Events/                         # Event PDFs and media
+│   └── IDEA Lab scheme_doc.pdf         # Official scheme document
+├── src/
+│   ├── components/                     # Header, sidebar, footer, shared UI
+│   ├── config/                         # Central asset path config
+│   ├── pages/                          # Route pages
+│   ├── App.tsx                         # Router + global layout
+│   ├── main.tsx                        # App bootstrap
+│   └── index.css                       # Tailwind and global animations/styles
+├── package.json
+└── vite.config.ts
+```
+
+## Local Development
 
 ### Prerequisites
-- Node.js (v16 or higher).
-- npm or yarn.
 
-### Installation
+- Node.js 18+ (recommended LTS)
+- npm 9+
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/amritesh-0/AICTE-IDEA-Lab.git
-   cd AICTE-IDEA-Lab
-   ```
+### Setup
 
-2. Install dependencies
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Start the development server
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. Build for production
-   ```bash
-   npm run build
-   # or
-   yarn build
-   ```
-
-##  Project Structure
-
-```
-project/
-├── src/
-│   ├── components/         # Reusable UI components
-│   ├── pages/             # Page components
-│   ├── config/            # Configuration files
-│   └── assets/            # Static assets
-├── public/               # Public assets
-└── package.json         # Project dependencies
+```bash
+git clone https://github.com/amritesh-0/AICTE-IDEA-Lab.git
+cd AICTE-IDEA-Lab
+npm install
 ```
 
-##  Design System
+### Run
 
-- **Colors**: Professional blue/teal gradient scheme.
-- **Typography**: Clean, modern font hierarchy.
-- **Components**: Consistent card layouts and spacing.
-- **Animations**: Smooth transitions and hover effects.
+```bash
+npm run dev
+```
 
-## Contributing
+Default dev server is provided by Vite (typically `http://localhost:5173`).
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+## Build and Quality Commands
+
+```bash
+npm run dev       # Start development server
+npm run build     # Create production build in dist/
+npm run preview   # Preview production build locally
+npm run lint      # Run ESLint checks
+```
+
+## Production Deployment
+
+Build artifacts are generated in `dist/`.
+
+```bash
+npm run build
+```
+
+Deploy `dist/` to any static host (Netlify, Vercel, S3+CloudFront, Nginx, etc.).
+
+### Important: SPA Rewrite Rule
+
+Because this app uses client-side routing, configure your host to rewrite unknown paths to `index.html`.
+
+Example behavior:
+
+- Request `/scheme` -> serve `index.html`
+- React Router resolves route in browser
+
+Without this rewrite, direct refresh on non-root routes may return `404`.
+
+## Content and Asset Updates
+
+- Student/member/faculty content: update page data arrays inside `src/pages/*.tsx`
+- Navigation labels/routes: `src/components/Header.tsx`, `src/components/Sidebar.tsx`, `src/App.tsx`
+- Footer quick links: `src/components/Footer.tsx`
+- Static assets/PDFs: place under `public/` and reference with absolute path (for example `/Events/file.pdf`)
+
+## Engineering Notes
+
+- Keep image and PDF paths URL-safe; for paths with spaces, use encoded URLs where needed.
+- Run `npm run build` before release to catch route/type/build regressions.
+- Keep UI changes consistent with existing visual system (Tailwind + Framer Motion).
+
+## Contribution Workflow
+
+1. Create a feature branch.
+2. Implement changes with focused commits.
+3. Run lint and build locally.
+4. Open PR with summary, screenshots (if UI changes), and test notes.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- AICTE IDEA Lab Team
-- Faculty Coordinators
-- Student Contributors
-
-## 📞 Contact
-
-For any queries regarding the IDEA Lab, please contact:
-
-- **Email**: [idealab@jaipur.manipal.edu]
-- **Phone**: [+91-141-999-4000]
-- **Location**: Manipal University Jaipur
-
----
-
-Built with ❤️ by Amritesh Kumar and the AICTE IDEA Lab team at Manipal University Jaipur
+This repository currently does not include a license file. Add one if distribution terms are required.
