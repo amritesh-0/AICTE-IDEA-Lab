@@ -9,6 +9,7 @@ import StudentsAndFacultiesPage from './pages/StudentsAndFacultiesPage';
 import StudentsPage from './pages/StudentsPage';
 import FacultiesPage from './pages/FacultiesPage';
 import FacilitiesPage from './pages/FacilitiesPage';
+import SchemePage from './pages/SchemePage';
 import Footer from './components/Footer';
 
 function App() {
@@ -83,6 +84,7 @@ function App() {
             <Route path="/students" element={<StudentsPage />} />
             <Route path="/members" element={<FacultiesPage />} />
             <Route path="/facilities" element={<FacilitiesPage />} />
+            <Route path="/scheme" element={<SchemePage />} />
           </Routes>
         </main>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Home, Users, Building, Mail, Phone, MapPin } from 'lucide-react';
+import { X, Home, Users, Building, Mail, Phone, MapPin, FileText } from 'lucide-react';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -16,6 +16,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     { path: '/members', label: 'Members', icon: Users },
     { path: '/students', label: 'Students', icon: Users },
     { path: '/facilities', label: 'Facilities', icon: Building },
+    { path: '/scheme', label: 'Scheme', icon: FileText },
   ];
 
   const sidebarVariants = {

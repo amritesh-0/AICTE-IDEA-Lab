@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Facebook, 
-  Instagram, 
-  Linkedin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Linkedin,
   Twitter,
   Send,
   Upload,
@@ -14,7 +14,8 @@ import {
   Home,
   Users,
   Building,
-  Beaker
+  Beaker,
+  FileText
 } from 'lucide-react';
 import { IMAGES } from '../config/images';
 
@@ -40,7 +41,8 @@ const Footer: React.FC = () => {
     { icon: Home, label: 'About Us', href: '/about' },
     { icon: Users, label: 'Members', href: '/members' },
     { icon: Users, label: 'Students', href: '/students' },
-    { icon: Building, label: 'Facilities', href: '/facilities' }
+    { icon: Building, label: 'Facilities', href: '/facilities' },
+    { icon: FileText, label: 'Scheme', href: '/scheme' }
   ];
 
   const openModal = (type: 'contact' | 'upload') => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, Beaker, Home, Users, Building } from 'lucide-react';
+import { Menu, Home, Users, Building, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { IMAGES } from '../config/images';
 
@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
     { path: '/members', label: 'Members', icon: Users },
     { path: '/students', label: 'Students', icon: Users },
     { path: '/facilities', label: 'Facilities', icon: Building },
+    { path: '/scheme', label: 'Scheme', icon: FileText },
   ];
 
   return (

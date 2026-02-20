@@ -259,7 +259,7 @@ const AboutUsPage: React.FC = () => {
               </div>
 
               <p className="text-center text-sm md:text-base font-semibold text-blue-900 underline underline-offset-4">
-                Click to open event standee PDF
+                Click to open event broucher PDF
               </p>
             </div>
           </button>
