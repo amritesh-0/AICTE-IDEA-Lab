@@ -105,8 +105,8 @@ const AboutUsPage: React.FC = () => {
 
   const leadership = [
     { name: "Prof. (Dr.) Amit Soni", role: "Chief Mentor" },
-    { name: "Prof. (Dr.) Ashima Bagaria", role: "AICTE IDEA Lab Faculty Coordinator (AIML)" },
-    { name: "Dr. Preeti Narooka", role: "AICTE IDEA Lab Faculty Co-Cordinator (AIML)" }
+    { name: "Prof. (Dr.) Ashima Bagaria", role: "AICTE IDEA Lab Faculty Coordinator" },
+    { name: "Dr. Preeti Narooka", role: "AICTE IDEA Lab Faculty Co-Cordinator" }
   ];
 
   const teamMembers = [
