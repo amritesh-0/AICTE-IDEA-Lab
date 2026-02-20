@@ -36,23 +36,23 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
         scrolled ? 'bg-white shadow-lg backdrop-blur-sm' : 'bg-white/95'
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2.5">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="flex items-center space-x-2">
               <img 
                 src={IMAGES.AICTE_LOGO} 
                 alt="AICTE Logo" 
-                className="h-10 w-10 object-contain"
+                className="h-8 w-8 object-contain"
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">AICTE IDEA Lab</h1>
+              <h1 className="text-lg font-bold text-gray-900">AICTE IDEA Lab</h1>
               <div className="flex items-center space-x-2">
                 <img 
                   src={IMAGES.MUJ_LOGO} 
                   alt="MUJ Logo" 
-                  className="h-8 w-100 object-contain"
+                  className="h-6 w-100 object-contain"
                 />
               </div>
             </div>
@@ -64,13 +64,13 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
               <Link
                 key={path}
                 to={path}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
+                className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg transition-all duration-200 ${
                   location.pathname === path
                     ? 'bg-primary/10 text-primary'
                     : 'text-gray-700 hover:bg-gray-100 hover:text-primary'
                 }`}
               >
-                <Icon size={18} />
+                <Icon size={16} />
                 <span className="font-medium">{label}</span>
               </Link>
             ))}
