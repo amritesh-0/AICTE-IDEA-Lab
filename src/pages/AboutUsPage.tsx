@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  ChevronLeft, 
-  ChevronRight, 
-  Target, 
-  Eye, 
-  Award, 
-  Users, 
-  Lightbulb, 
-  Rocket, 
-  Building, 
-  Globe, 
-  Zap, 
+import {
+  ChevronLeft,
+  ChevronRight,
+  Target,
+  Eye,
+  Award,
+  Users,
+  Lightbulb,
+  Rocket,
+  Building,
+  Globe,
+  Zap,
   Heart,
   CheckCircle,
   Star,
@@ -122,13 +122,13 @@ const AboutUsPage: React.FC = () => {
   ];
 
   const studentTeam = [
-    { name: "Amritesh Kumar", role: "AICTE Lab Website | RG No. 23FE10CAI00318" },
-    { name: "Mannya Aggarwal", role: "AICTE Lab Website | RG No. 23FE10CAI00154" },
+    { name: "Mr. Amritesh Kumar", role: "AICTE Lab Website | RG No. 23FE10CAI00318" },
+    { name: "Mr. Mannya Aggarwal", role: "AICTE Lab Website | RG No. 23FE10CAI00154" },
     { name: "Mr. Purvaansh Kaushik", role: "Student Ambassador | RG No: 2425060021" },
     { name: "Ms. Daivik Garg", role: "Student Ambassador | RG No: 2427010483" },
     { name: "Mr. Jaskeerat Singh Bhatia", role: "Student Ambassador | RG No: 2429010002" },
     { name: "Mr. Deep Ghosh", role: "Student Ambassador | RG No: 2429010001" },
-    { name: "Ms. Savya Govil", role: "Student Ambassador | RG No: 2429010010" },
+    { name: "Mr. Savya Govil", role: "Student Ambassador | RG No: 2429010010" },
     { name: "Mr. Ansh Kumar Singh", role: "Student Ambassador | RG No: 2429010003" }
   ];
 
@@ -155,9 +155,8 @@ const AboutUsPage: React.FC = () => {
           {carouselItems.map((item, index) => (
             <motion.div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? 'opacity-100' : 'opacity-0'
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
             >
               <div
                 className="h-full bg-cover bg-center relative"
@@ -179,7 +178,7 @@ const AboutUsPage: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        
+
         {/* Carousel Controls */}
         <button
           onClick={prevSlide}
@@ -200,9 +199,8 @@ const AboutUsPage: React.FC = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                index === currentSlide ? 'bg-white' : 'bg-white/50'
-              }`}
+              className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-white' : 'bg-white/50'
+                }`}
             />
           ))}
         </div>
@@ -354,7 +352,7 @@ const AboutUsPage: React.FC = () => {
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Provost of MUJ</h4>
               <p className="text-primary font-medium">Dr. Nitu Bhatnagar</p>
             </motion.div>
-            
+
             {/* Registrar */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -417,7 +415,7 @@ const AboutUsPage: React.FC = () => {
               </motion.div>
             ))}
           </div>
-          
+
           <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8">
             <div className="grid md:grid-cols-2 gap-6">
               {keyHighlights.map((highlight, index) => (
@@ -449,9 +447,9 @@ const AboutUsPage: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
             </div>
             <p className="text-gray-700 leading-relaxed mb-6">
-              To establish a self-sustaining innovation ecosystem that transforms engineering education through 
-              "learning by doing." We aim to nurture imaginative and creative graduates who can convert ideas 
-              into impactful solutions, positioning our IDEA Lab as a leading innovation hub that addresses 
+              To establish a self-sustaining innovation ecosystem that transforms engineering education through
+              "learning by doing." We aim to nurture imaginative and creative graduates who can convert ideas
+              into impactful solutions, positioning our IDEA Lab as a leading innovation hub that addresses
               rural community needs while advancing skill-based learning across all levels.
             </p>
             <div className="space-y-3">
@@ -577,9 +575,9 @@ const AboutUsPage: React.FC = () => {
             </div>
             <div className="text-center lg:text-left">
               <blockquote className="text-lg text-gray-700 leading-relaxed mb-4 italic">
-                "Innovation is not optional - it's essential for India's growth. Our IDEA Lab transforms students 
-                into problem-solvers who will lead technological advancement. Through this platform, we're creating 
-                industry-ready graduates who can convert classroom knowledge into real-world solutions. I invite 
+                "Innovation is not optional - it's essential for India's growth. Our IDEA Lab transforms students
+                into problem-solvers who will lead technological advancement. Through this platform, we're creating
+                industry-ready graduates who can convert classroom knowledge into real-world solutions. I invite
                 all stakeholders to join us in building a culture of innovation."
               </blockquote>
               <cite className="text-blue-600 font-semibold">
@@ -597,7 +595,7 @@ const AboutUsPage: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Leadership & Team</h3>
-          
+
           {/* Leadership */}
           <div className="mb-12">
             <h4 className="text-2xl font-bold text-gray-900 mb-6 text-center">Leadership</h4>
@@ -685,8 +683,8 @@ const AboutUsPage: React.FC = () => {
             <h3 className="text-3xl font-bold text-black">Vision for the Future</h3>
           </div>
           <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-            We focus on sustainable technologies that address rural challenges while aligning with UN Sustainable 
-            Development Goals. The lab will evolve into a regional innovation center supporting 500+ users annually 
+            We focus on sustainable technologies that address rural challenges while aligning with UN Sustainable
+            Development Goals. The lab will evolve into a regional innovation center supporting 500+ users annually
             through academic programs and industry collaborations.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
