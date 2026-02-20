@@ -24,6 +24,7 @@ import { IMAGES } from '../config/images';
 
 const AboutUsPage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const nsdEventPdf = encodeURI('/Events/NSD 2026 Standee Idea Lab.pdf');
 
   const carouselItems = [
     {
@@ -112,7 +113,7 @@ const AboutUsPage: React.FC = () => {
     "Dr. Ashima Bagaria",
     "Dr. Preeti Narooka",
     "Dr. Manoj K. Saini",
-    "Dr. Saurabh Dewangan",
+    "Dr. Biswesh Ranjan Acharya",
     "Dr. Anurag Joshi",
     "Dr. Himanshu Chaudhary",
     "Mr. Ashish Vijay",
@@ -208,6 +209,62 @@ const AboutUsPage: React.FC = () => {
       </section>
 
       <div className="container mx-auto px-4 space-y-16">
+        {/* National Science Day Event Banner */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="relative overflow-hidden rounded-3xl"
+        >
+          <button
+            onClick={() => window.open(nsdEventPdf, '_blank')}
+            className="w-full text-left rounded-3xl p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-900/20"
+            aria-label="Open National Science Day 2026 event standee"
+            style={{
+              backgroundColor: '#e8d287',
+              backgroundImage:
+                'radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.09) 0 2px, transparent 2px), radial-gradient(circle at 75% 15%, rgba(37, 99, 235, 0.09) 0 2px, transparent 2px), radial-gradient(circle at 35% 75%, rgba(37, 99, 235, 0.09) 0 2px, transparent 2px), radial-gradient(circle at 85% 70%, rgba(37, 99, 235, 0.09) 0 2px, transparent 2px)',
+              backgroundSize: '220px 220px',
+            }}
+          >
+            <div className="relative space-y-6">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+                {/* <img src={IMAGES.AICTE_LOGO} alt="AICTE Logo" className="h-20 w-auto md:h-24 object-contain" /> */}
+                <img src="/images/AICTE Idea Lab logo.png" alt="AICTE IDEA Lab Logo" className="h-20 w-auto md:h-24 object-contain" />
+              </div>
+
+              <p className="text-center text-base md:text-lg font-bold tracking-[0.2em] text-blue-900 uppercase">
+                AICTE IDEA LAB
+              </p>
+              <p className="text-center text-2xl md:text-4xl font-serif italic text-blue-900">
+                celebrates
+              </p>
+
+              <h3 className="text-center text-4xl md:text-7xl font-black uppercase leading-tight text-blue-900">
+                National Science Day
+              </h3>
+              <p className="text-center text-lg md:text-2xl font-bold tracking-wide text-blue-800 uppercase">
+                February 28, 2026
+              </p>
+              <div className="mx-auto max-w-3xl rounded-2xl border border-blue-900/20 bg-white/35 p-5 md:p-6 text-center">
+                <p className="text-sm md:text-base font-black tracking-[0.25em] text-blue-900 uppercase">
+                  Theme
+                </p>
+                <p className="mt-2 text-2xl md:text-4xl font-black uppercase text-blue-900">
+                  Women in Science
+                  <span className="block mt-2 text-base md:text-xl font-bold text-blue-800">
+                    Catalysing Viksit Bharat
+                  </span>
+                </p>
+              </div>
+
+              <p className="text-center text-sm md:text-base font-semibold text-blue-900 underline underline-offset-4">
+                Click to open event standee PDF
+              </p>
+            </div>
+          </button>
+        </motion.section>
+
         {/* About Section */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}

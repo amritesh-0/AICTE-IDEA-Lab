@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [alertVisible, setAlertVisible] = useState(true);
+  const nsdEventPdf = encodeURI('/Events/NSD 2026 Standee Idea Lab.pdf');
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -33,16 +34,26 @@ function App() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="bg-gradient-to-r from-primary to-accent text-white py-3 px-4 text-center relative"
+                className="relative overflow-hidden border-b border-blue-900/20 bg-[#e8d287] py-3"
               >
-                <p className="text-sm font-medium">
-                  🚀 New STEM Innovation Workshop Series Starting Soon! Register Now
-                </p>
+                <button
+                  onClick={() => window.open(nsdEventPdf, '_blank')}
+                  className="block w-full text-left pr-12"
+                  aria-label="Open National Science Day 2026 event standee"
+                >
+                  <motion.div
+                    className="whitespace-nowrap text-blue-900 font-extrabold tracking-wide text-sm md:text-base"
+                    animate={{ x: ['100%', '-100%'] }}
+                    transition={{ duration: 16, ease: 'linear', repeat: Infinity }}
+                  >
+                    AICTE IDEA LAB CELEBRATES NATIONAL SCIENCE DAY | FEBRUARY 28, 2026
+                  </motion.div>
+                </button>
                 <button
                   onClick={() => setAlertVisible(false)}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-white/20 rounded-full p-1"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 hover:bg-blue-900/10"
                 >
-                  <X size={16} />
+                  <X size={16} className="text-blue-900" />
                 </button>
               </motion.div>
             )}
