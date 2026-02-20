@@ -8,18 +8,60 @@ const StudentsPage: React.FC = () => {
     {
       id: 1,
       name: "Amritesh Kumar",
-      year: "Third Year B.Tech CSE (AI & ML)",
+      year: "Third Year, RG No: 23FE10CAI00318",
       project: "AICTE Lab Website Development",
-      achievements: <>Full Stack & ML developer, <a href="https://www.localyse.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Localyse.in</a></>,
+      achievements: "Full Stack & ML developer",
       image: IMAGES.STUDENT_1
     },
     {
       id: 2,
       name: "Mannya Agarwal",
-      year: "Third Year B.Tech CSE (AI & ML)",
+      year: "Third Year, RG No: 23FE10CAI00154",
       project: "AICTE Lab Website Development",
       achievements: "UI/UX Design Excellence",
       image: IMAGES.STUDENT_2
+    },
+    {
+      id: 3,
+      name: "Mr. Purvaansh Kaushik",
+      year: "RG No: 2425060021",
+      project: "Student Ambassador",
+      achievements: "AICTE IDEA Lab Student Ambassador"
+    },
+    {
+      id: 4,
+      name: "Ms. Daivik Garg",
+      year: "RG No: 2427010483",
+      project: "Student Ambassador",
+      achievements: "AICTE IDEA Lab Student Ambassador"
+    },
+    {
+      id: 5,
+      name: "Mr. Jaskeerat Singh Bhatia",
+      year: "RG No: 2429010002",
+      project: "Student Ambassador",
+      achievements: "AICTE IDEA Lab Student Ambassador"
+    },
+    {
+      id: 6,
+      name: "Mr. Deep Ghosh",
+      year: "RG No: 2429010001",
+      project: "Student Ambassador",
+      achievements: "AICTE IDEA Lab Student Ambassador"
+    },
+    {
+      id: 7,
+      name: "Ms. Savya Govil",
+      year: "RG No: 2429010010",
+      project: "Student Ambassador",
+      achievements: "AICTE IDEA Lab Student Ambassador"
+    },
+    {
+      id: 8,
+      name: "Mr. Ansh Kumar Singh",
+      year: "RG No: 2429010003",
+      project: "Student Ambassador",
+      achievements: "AICTE IDEA Lab Student Ambassador"
     }
   ];
 
@@ -81,16 +123,14 @@ const StudentsPage: React.FC = () => {
                 <div className="p-8">
                   <div className="flex items-start space-x-6">
                     <img
-                      src={student.image}
+                      src={student.image || '/images/placeholder.jpg'}
                       alt={student.name}
                       className="w-32 h-32 rounded-full object-cover shadow-lg"
                     />
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-900 mb-1">{student.name}</h3>
                       <p className="text-primary font-medium mb-2">{student.year}</p>
-                      <h4 className="font-semibold text-gray-900 mb-2">Current Project</h4>
-                      <p className="text-gray-600 text-sm mb-4">{student.project}</p>
-                      <div className="flex items-center space-x-2 text-sm">
+                      <div className="flex items-center space-x-2 text-sm mt-2">
                         <Award size={14} className="text-yellow-500" />
                         <span className="text-gray-600">{student.achievements}</span>
                       </div>

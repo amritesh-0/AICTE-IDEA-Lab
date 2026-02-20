@@ -104,8 +104,8 @@ const AboutUsPage: React.FC = () => {
 
   const leadership = [
     { name: "Prof. (Dr.) Amit Soni", role: "Chief Mentor" },
-    { name: "Prof. (Dr.) Ashima Bagaria", role: "Associate Dean (School of Physical and Biological Sciences" },
-    { name: "Dr. Preeti Narooka", role: "Faculty Co-ordinator (AIML)" }
+    { name: "Prof. (Dr.) Ashima Bagaria", role: "AICTE IDEA Lab Faculty Coordinator (AIML)" },
+    { name: "Dr. Preeti Narooka", role: "AICTE IDEA Lab Faculty Co-Cordinator (AIML)" }
   ];
 
   const teamMembers = [
@@ -121,8 +121,14 @@ const AboutUsPage: React.FC = () => {
   ];
 
   const studentTeam = [
-    { name: "Amritesh Kumar", role: "AICTE Lab Website" },
-    { name: "Mannya Aggarwal", role: "AICTE Lab Website" }
+    { name: "Amritesh Kumar", role: "AICTE Lab Website | RG No. 23FE10CAI00318" },
+    { name: "Mannya Aggarwal", role: "AICTE Lab Website | RG No. 23FE10CAI00154" },
+    { name: "Mr. Purvaansh Kaushik", role: "Student Ambassador | RG No: 2425060021" },
+    { name: "Ms. Daivik Garg", role: "Student Ambassador | RG No: 2427010483" },
+    { name: "Mr. Jaskeerat Singh Bhatia", role: "Student Ambassador | RG No: 2429010002" },
+    { name: "Mr. Deep Ghosh", role: "Student Ambassador | RG No: 2429010001" },
+    { name: "Ms. Savya Govil", role: "Student Ambassador | RG No: 2429010010" },
+    { name: "Mr. Ansh Kumar Singh", role: "Student Ambassador | RG No: 2429010003" }
   ];
 
   useEffect(() => {
