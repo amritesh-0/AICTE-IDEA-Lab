@@ -39,11 +39,11 @@ const FacultiesPage: React.FC = () => {
     },
     {
       id: 4,
-      name: "Dr. Saurabh Dewangan",
-      designation: "Associate Professor",
-      specialization: " Department of Mechanical Engineering",
-      email: "saurabh.dewangan@jaipur.manipal.edu",
-      image: IMAGES.SAURABH_DEWANGAN,
+      name: "Dr. Biswesh Ranjan Acharya",
+      designation: "Assistant Professor",
+      specialization: "Department of Mechanical Engineering",
+      email: "biswesh.ranjan@jaipur.manipal.edu",
+      image: '/images/placeholder.jpg',
       // achievements: ["Mechanical Design Expert", "CAD/CAM Specialist", "Product Development"],
       // projects: ["3D Modeling", "Prototype Development", "Manufacturing Processes"]
     },
